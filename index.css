@@ -1,0 +1,97 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+}
+
+button {
+    z-index: 10;
+}
+
+#todoParent {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    background-color: darkslategray;
+    position:absolute;
+}
+
+#functionality {
+    width: 40%;
+    background-color: white;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#columns h1 {
+    text-align: center;
+}
+
+#columns section {
+    background-color: #e0e0e0;
+    border: black solid 1px;
+    width: 250px;
+    height: 90vh;
+    margin: 5%;
+    overflow-y: scroll;
+}
+
+#columns article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 5%;
+    padding: 5%;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #e0e0e0;
+}
+
+#toolbar button {
+    margin: 5px;
+}
+
+#todoCount {
+    margin-left: 1%;
+}
+
+.todoToolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todoCheckbox {
+    margin: 5%;
+}
+
+.todoInput {
+    height: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.columnToolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
